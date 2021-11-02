@@ -1,0 +1,111 @@
+﻿<Page x:Class="VetClinic.Administrator.Clients.AdminClientMain"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:VetClinic.Administrator.Clients"
+      mc:Ignorable="d" 
+       d:DesignHeight="1000"
+      d:DesignWidth="1370"
+      Title="AdminClientMain"
+      Style="{StaticResource pgDefault}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="700"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" 
+                  Text="Clients"
+                  HorizontalAlignment="Center"
+                  FontSize="72"/>
+        <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Grid.Row="1">
+            <TextBox Height="74"
+                     Width="280"
+                     x:Name="txbClient"
+                     SelectionChanged="txbClient_SelectionChanged"
+                     />
+            <Button Content="Search"
+                    FontSize="36"
+                    Width="170"
+                    Height="60"
+                    Style="{StaticResource btnActivity}"
+                    x:Name="btnSearch"
+                    Click="btnSearch_Click"
+                    />
+
+        </StackPanel>
+
+        <WrapPanel Grid.Row="3"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center">
+            <Button x:Name="btnNew"
+                    Click="btnNew_Click"
+                    Grid.Row="3"
+                    HorizontalAlignment="Center"
+                    Style="{StaticResource btnNew}"
+                    />
+            <Button x:Name="btnEdit"
+                    Click="btnEdit_Click"
+                    Style="{StaticResource btnEdit}"
+                />
+            <Button x:Name="btnDelete"
+                    Click="btnDelete_Click"
+                    Style="{StaticResource btnDelete}"
+                    />
+        </WrapPanel>
+
+        <ListView Grid.Row="2"
+                  x:Name="lvAdminClient" 
+                  SelectionChanged="lvAdminClient_SelectionChanged"
+                  >
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="125"
+                                    Header="First Name"
+                                    DisplayMemberBinding="{Binding FirstName}"
+                                    />
+                    <GridViewColumn Width="125"
+                                    Header="Last Name"
+                                    DisplayMemberBinding="{Binding LastName}"
+                                    />
+                    <GridViewColumn Width="125"
+                                    Header="Patronymic"
+                                    DisplayMemberBinding="{Binding Patronymic}"
+                                    />
+                    <GridViewColumn Width="125"
+                                    Header="Birthday"
+                                    DisplayMemberBinding="{Binding Birthday}"
+                                    />
+                    <GridViewColumn Width="125"
+                                    Header="Email"
+                                    DisplayMemberBinding="{Binding Email}"
+                                    />
+                    <GridViewColumn Width="125"
+                                    Header="Address"
+                                    DisplayMemberBinding="{Binding Address}"
+                                    />
+                    <GridViewColumn Width="225"
+                                    Header="Passport Number"
+                                    DisplayMemberBinding="{Binding PassportSeries}"
+                                    />
+                    <GridViewColumn Width="225"
+                                    Header="Passport Series"
+                                    DisplayMemberBinding="{Binding PassportNumber}"
+                                    />
+                    <GridViewColumn Width="225"
+                                    Header="Gender"
+                                    DisplayMemberBinding="{Binding Gender.NameGender}"
+                                    />
+
+
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Page>

@@ -1,0 +1,80 @@
+﻿<Page x:Class="VetClinic.Administrator.AuthData.AdminAuthAddPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:VetClinic.Administrator.AuthData"
+      mc:Ignorable="d" 
+      d:DesignHeight="1000"
+      d:DesignWidth="1370"
+      Title="AdminClientAddPage"
+      Style="{StaticResource pgDefault}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+
+            <RowDefinition Height="700"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"
+                              />
+
+
+        </Grid.ColumnDefinitions>
+        <TextBlock  Grid.ColumnSpan="2"
+                  Text="Auth data"
+                  HorizontalAlignment="Center"
+                  FontSize="72"/>
+        <StackPanel HorizontalAlignment="Center"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    VerticalAlignment="Center">
+
+            <WrapPanel Margin="10">
+                <Label Content="Name              "
+                   Style="{StaticResource lblDefault}"
+                   />
+                <ComboBox Style="{StaticResource cmbDefault}"
+                          x:Name="cmbStaff"
+                          SelectedIndex="0"
+                          SelectionChanged="cmbStaff_SelectionChanged"
+                         />
+            </WrapPanel>
+            <WrapPanel Margin="10">
+                <Label Content="Login              "
+                   Style="{StaticResource lblDefault}"
+                   />
+                <TextBox Style="{StaticResource txbDefault}"
+                         x:Name="txbLogin"
+                         
+                         />
+            </WrapPanel>
+            <WrapPanel Margin="10">
+                <Label Content="Password        "
+                   Style="{StaticResource lblDefault}"
+                   />
+                <TextBox Style="{StaticResource txbDefault}"
+                         x:Name="txbPassword"
+                         />
+            </WrapPanel>
+
+        </StackPanel>
+        <WrapPanel Grid.Row="3"
+                   Grid.ColumnSpan="2"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center">
+            <Button Style="{StaticResource btnActivity}"
+                    Content="Save"
+                    x:Name="btnSaveAuthData"
+                    Click="btnSaveAuthData_Click"
+                    />
+            <Button Style="{StaticResource btnDelete}"
+                    Content="Cancel"
+                    x:Name="btnCancelAuthData"
+                    Click="btnCancelAuthData_Click"
+                    />
+        </WrapPanel>
+    </Grid>
+</Page>

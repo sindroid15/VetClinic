@@ -1,0 +1,80 @@
+﻿<Page x:Class="VetClinic.Administrator.Appointment.PageAdminAppointmentPetAdd"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:VetClinic.Administrator.Appointment"
+      mc:Ignorable="d" 
+      Title="AdminApponitmentAdd"
+      Style="{StaticResource pgDefault}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="700"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" 
+                  Text="Pet"
+                  HorizontalAlignment="Center"
+                  FontSize="72"/>
+        <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Grid.Row="1">
+            <TextBox Height="74"
+                     Width="280"
+                     x:Name="txbPetSearch"
+                     SelectionChanged="txbPetSearch_SelectionChanged"
+                     />
+            <Button Content="Search"
+                    FontSize="36"
+                    Width="170"
+                    Height="60"
+                    Style="{StaticResource btnActivity}"
+                    x:Name="btnSearch"
+                    Click="btnSearch_Click"
+                    />
+
+        </StackPanel>
+
+        <WrapPanel Grid.Row="3"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center">
+            <Button x:Name="btnNew"
+                    Content="New Pet"
+                    Click="btnNew_Click"
+                    Grid.Row="3"
+                    HorizontalAlignment="Center"
+                    Style="{StaticResource btnNew}"
+                    />
+            <Button x:Name="btnAdd"
+                    Content="Add Selected"
+                    Click="btnAdd_Click"
+                    Style="{StaticResource btnEdit}"
+                />
+        </WrapPanel>
+
+        <ListView Grid.Row="2"
+                  x:Name="lvAdminAppointmentPetAdd" 
+                  SelectionChanged="lvAdminAppointmentPetAdd_SelectionChanged"
+                  >
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="325"
+                                    Header="Name Pet"
+                                    DisplayMemberBinding="{Binding NamePet}"
+                                    />
+                    <GridViewColumn Width="352"
+                                    Header="Gender"
+                                    DisplayMemberBinding="{Binding Gender.NameGender}"/>
+                    <GridViewColumn Width="340"
+                                    Header="Type Pet"
+                                    DisplayMemberBinding="{Binding TypePet.NameTypePet}"
+                                    />
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Page>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="796d619a4728427fa231dd9584ae8625" Name="Diagram1">
+        <EntityTypeShape EntityType="VetDBModel.AuthData" Width="1.5" PointX="5.25" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="VetDBModel.Cabinet" Width="1.5" PointX="0.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="VetDBModel.Diagnosis" Width="1.5" PointX="3" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="VetDBModel.Gender" Width="1.5" PointX="0.75" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="VetDBModel.MedicalCard" Width="1.5" PointX="6" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VetDBModel.MedicalExamination" Width="1.5" PointX="5.25" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="VetDBModel.PassportData" Width="1.5" PointX="5.25" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="VetDBModel.Pet" Width="1.5" PointX="3.75" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="VetDBModel.Position" Width="1.5" PointX="0.75" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="VetDBModel.Procedure" Width="1.5" PointX="3" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="VetDBModel.Role" Width="1.5" PointX="0.75" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="VetDBModel.Staff" Width="1.5" PointX="3" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="VetDBModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VetDBModel.TypePet" Width="1.5" PointX="1.5" PointY="20.875" IsExpanded="true" />
+        <AssociationConnector Association="VetDBModel.FK__AuthData__IdStaf__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="VetDBModel.FK__MedicalEx__IdCab__5DCAEF64" ManuallyRouted="false" />
+        <AssociationConnector Association="VetDBModel.FK__Procedure__IdCab__5812160E" ManuallyRouted="false" />
+        <AssociationConnector Association="VetDBModel.FK__Staff__IdCabinet__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="VetDBModel.FK__MedicalEx__IdDia__5BE2A6F2" ManuallyRouted="false" />
+        <AssociationConnector Association="VetDBModel.FK__Pet__IdGender__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="VetDBModel.FK__Staff__Gender__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="VetDBModel.FK__MedicalCa__IdPet__534D60F1" ManuallyRouted="false" />
+        <AssociationConnector Association="VetDBModel.FK__MedicalEx__IdMed__5AEE82B9" ManuallyRouted="false" />
+        <AssociationConnector Association="VetDBModel.FK__MedicalEx__IdPro__5CD6CB2B" ManuallyRouted="false" />
+        <AssociationConnector Association="VetDBModel.FK__MedicalEx__IdSta__5EBF139D" ManuallyRouted="false" />
+        <AssociationConnector Association="VetDBModel.FK__PassportD__IdSta__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="VetDBModel.FK__Pet__IdTypePet__4E88ABD4" ManuallyRouted="false" />
+        <AssociationConnector Association="VetDBModel.FK__Staff__IdPositio__3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="VetDBModel.FK__Staff__IdRole__403A8C7D" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="VetDBModel.Client" Width="1.5" PointX="3" PointY="15.125" />
+        <AssociationConnector Association="VetDBModel.FK__Client__IdGender__49C3F6B7" />
+        <AssociationConnector Association="VetDBModel.FK__MedicalCa__IdCli__52593CB8" />
+        <EntityTypeShape EntityType="VetDBModel.Appointment" Width="1.5" PointX="8.25" PointY="12.25" />
+        <AssociationConnector Association="VetDBModel.FK__Appointme__IdMed__619B8048" />
+        <AssociationConnector Association="VetDBModel.FK__Appointme__IdSta__60A75C0F" />
+        <EntityTypeShape EntityType="VetDBModel.AppointmentData" Width="1.5" PointX="7.375" PointY="3.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

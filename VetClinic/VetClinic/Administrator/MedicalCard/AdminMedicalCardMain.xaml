@@ -1,0 +1,94 @@
+﻿<Page x:Class="VetClinic.Administrator.MedicalCard.AdminMedicalCardMain"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:VetClinic.Administrator.MedicalCard"
+      mc:Ignorable="d" 
+       d:DesignHeight="1000"
+      d:DesignWidth="1370"
+      
+      Style="{StaticResource pgDefault}"
+      Title="AdminMedicalCardMain">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="700"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" 
+                  Text="MedicalCard"
+                  HorizontalAlignment="Center"
+                  FontSize="72"/>
+        <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Grid.Row="1">
+            <TextBox Height="74"
+                     Width="280"
+                     x:Name="txbMedicalCardSearch"
+                     SelectionChanged="txbMedicalCardSearch_SelectionChanged"
+                     />
+           
+            <Button Content="Search"
+                    FontSize="36"
+                    Width="170"
+                    Height="60"
+                    Style="{StaticResource btnActivity}"
+                    x:Name="btnSearch"
+                    Click="btnSearch_Click"
+                    />
+
+        </StackPanel>
+
+        <WrapPanel Grid.Row="3"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center">
+            <Button x:Name="btnNew"
+                    Click="btnNew_Click"
+                    Grid.Row="3"
+                    HorizontalAlignment="Center"
+                    Style="{StaticResource btnNew}"
+                    />
+            <Button x:Name="btnEdit"
+                    Click="btnEdit_Click"
+                    Style="{StaticResource btnEdit}"
+                />
+            <Button x:Name="btnDelete"
+                    Click="btnDelete_Click"
+                    Style="{StaticResource btnDelete}"
+                    />
+        </WrapPanel>
+
+        <ListView Grid.Row="2"
+                  x:Name="lvAdminMedicalCard" 
+                  SelectionChanged="lvAdminMedicalCard_SelectionChanged"
+                  >
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="325"
+                                    Header="MedicalCard"
+                                    DisplayMemberBinding="{Binding IdMedicalCard}"
+                                    />
+                    <GridViewColumn Width="340"
+                                    Header="Type Pet"
+                                    DisplayMemberBinding="{Binding Pet.IdTypePet}"
+                                    />
+                    <GridViewColumn Width="340"
+                                    Header="Name Pet"
+                                    DisplayMemberBinding="{Binding Pet.NamePet}"
+                                    />
+
+                    <GridViewColumn Width="360"
+                                    Header="NameClient"
+                                    DisplayMemberBinding="{Binding Client.FirstName}"/>
+
+
+
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Page>
