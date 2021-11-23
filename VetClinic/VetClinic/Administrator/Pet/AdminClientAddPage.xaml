@@ -39,6 +39,7 @@
                 <ComboBox Style="{StaticResource cmbDefault}"
                           x:Name="cmbTypePet"
                           SelectionChanged="cmbTypePet_SelectionChanged"
+                          
                          />
             </WrapPanel>
             <WrapPanel Margin="10">

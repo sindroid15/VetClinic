@@ -12,6 +12,7 @@
       Style="{StaticResource pgDefault}">
 
     <Grid>
+        <Viewbox Stretch="Uniform">
         <StackPanel Orientation="Vertical"
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center">
@@ -25,5 +26,6 @@
 
 
         </StackPanel>
+        </Viewbox>
     </Grid>
 </Page>

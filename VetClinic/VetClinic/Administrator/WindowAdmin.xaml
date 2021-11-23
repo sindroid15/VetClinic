@@ -11,14 +11,17 @@
         >
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="480"/>
-            <ColumnDefinition Width="1520"/>
+            <ColumnDefinition Width="480*"/>
+            <ColumnDefinition Width="1520*"/>
         </Grid.ColumnDefinitions>
+        <Viewbox Stretch="Uniform">
         <Frame Grid.Column="0"
                x:Name="frmProfile"/>
+        </Viewbox>
+        <Viewbox Stretch="Uniform" Grid.Column="1">
         <Frame Grid.Column="1"
                x:Name="frmActivity"
                NavigationUIVisibility="Hidden"/>
-
+        </Viewbox>
     </Grid>
 </Window>

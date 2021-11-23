@@ -11,16 +11,19 @@
       Style="{StaticResource pgDefault}">
 
     <Grid>
+        
         <Grid.RowDefinitions>
-            <RowDefinition Height="100"/>
-            <RowDefinition Height="100"/>
-            <RowDefinition Height="700"/>
-            <RowDefinition Height="100"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="700*"/>
+            <RowDefinition Height="100*"/>
         </Grid.RowDefinitions>
+        
         <TextBlock Grid.Row="0" 
                   Text="Appointment"
                   HorizontalAlignment="Center"
                   FontSize="72"/>
+        
         <StackPanel Orientation="Horizontal"
                     HorizontalAlignment="Left"
                     VerticalAlignment="Top"

@@ -56,23 +56,8 @@ namespace VetClinic.Administrator.Appointment
         {
             if (Class.changeAppointmentData!=null&&Class.changeAppointmentData.IdAppointment!=0)
             {
-                //// Class.changeAppointmentData.DateTime = DateTime.Parse(txbDateTime.Text);
-                // var item = Class.db.Appointment.Find(Class.changeAppointmentData.IdAppointment);
-                // item.DateTime = DateTime.Parse(txbDateTime.Text);
-                // item.IdAppointment = Class.changeAppointmentData.IdAppointment;
-                // item.IdMedicalCard = Class.changeAppointmentData.IdMedicalCard;
-                // item.IdStaff = Class.changeAppointmentData.IdStaff;
-
-
-
-                // Class.db.SaveChanges();
-                //// Class.windowAdmin.frmActivity.Navigate(new Appointment.PageAdminAppointment());
-                ///
-
-
-
                 Class.changeAppointmentData.MedicalCard.IdClient = 0;
-                // Class.changeAppointmentData.IdAppointment = 0;
+                
                 Class.changeAppointmentData.IdMedicalCard = 0;
                 Class.changeAppointmentData.MedicalCard.IdPet = 0;
                 MessageBox.Show("Successfull changed appointment)))", "Not Relesed Function", MessageBoxButton.OK);
@@ -88,12 +73,6 @@ namespace VetClinic.Administrator.Appointment
 
         private void btnCancelAppointment_Click(object sender, RoutedEventArgs e)
         {
-            //Class.changeAppointmentData.MedicalCard.IdClient = 0;
-            //// Class.changeAppointmentData.IdAppointment = 0;
-            //Class.changeAppointmentData.IdMedicalCard = 0;
-            //Class.changeAppointmentData.MedicalCard.IdPet = 0;
-            //Class.changeMedicalCard.Client.FirstName = null;
-            //Class.changeMedicalCard.Pet.NamePet = null;
             Class.newsaveAppointment = null;
             Class.windowAdmin.frmActivity.Navigate(new Appointment.PageAdminAppointment());
         }

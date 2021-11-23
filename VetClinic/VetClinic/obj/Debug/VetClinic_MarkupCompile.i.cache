@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\sindr\Desktop\git_repo\VetClinic\VetClinic\VetClinic\App.xaml
-20621321804
-2-1531416940
-481672560684
-18-754359222
-Administrator\Appointment\PageAdminAppointment.xaml;Administrator\Appointment\PageAdminAppointmentConfirming.xaml;Administrator\Appointment\PageAdminAppointmentClientAdd.xaml;Administrator\Appointment\PageAdminAppointmentPetAdd.xaml;Administrator\AuthData\AdminAuthAddPage.xaml;Administrator\AuthData\AdminAuthDataMain.xaml;Administrator\Clients\AdminClientAddPage.xaml;Administrator\Clients\AdminClientMain.xaml;Administrator\MedicalCard\AdminMedicalCardAddPage.xaml;Administrator\MedicalCard\AdminMedicalCardMain.xaml;Administrator\PageProfile.xaml;Administrator\Pet\AdminClientAddPage.xaml;Administrator\Pet\AdminPetMain.xaml;Administrator\Procedure\AdminProcedureAddPage.xaml;Administrator\Procedure\AdminProcedureMain.xaml;Administrator\Staff\AdminStaffMain.xaml;Administrator\WindowAdmin.xaml;Auth\AboutClinic.xaml;Auth\AuthPage.xaml;Auth\AuthWindow.xaml;
+40329119257
+2-1293242089
+68-1555267596
+18-595597185
+Administrator\Appointment\PageAdminAppointment.xaml;Administrator\Appointment\PageAdminAppointmentConfirming.xaml;Administrator\Appointment\PageAdminAppointmentClientAdd.xaml;Administrator\Appointment\PageAdminAppointmentPetAdd.xaml;Administrator\AuthData\AdminAuthAddPage.xaml;Administrator\AuthData\AdminAuthDataMain.xaml;Administrator\Clients\AdminClientAddPage.xaml;Administrator\Clients\AdminClientMain.xaml;Administrator\MedicalCard\AdminMedicalCardAddPage.xaml;Administrator\MedicalCard\AdminMedicalCardMain.xaml;Administrator\PageProfile.xaml;Administrator\Pet\AdminClientAddPage.xaml;Administrator\Pet\AdminPetMain.xaml;Administrator\Procedure\AdminProcedureAddPage.xaml;Administrator\Procedure\AdminProcedureMain.xaml;Administrator\Staff\AdminStaffMain.xaml;Administrator\WindowAdmin.xaml;Auth\AboutClinic.xaml;Auth\AuthPage.xaml;Auth\AuthWindow.xaml;Dcotor\Appointment\PageDoctorAppointment.xaml;Dcotor\Appointment\PageDoctorAppointmentClientAdd.xaml;Dcotor\Appointment\PageDoctorAppointmentConfirming.xaml;Dcotor\Appointment\PageDoctorAppointmentPetAdd.xaml;Dcotor\PageProfile.xaml;Dcotor\Procedure\DoctorProcedureAddPage.xaml;Dcotor\Procedure\DoctorProcedureMain.xaml;Dcotor\WindowDoctor.xaml;Manager\Appointment\PageManagerAppointment.xaml;Manager\Appointment\PageManagerAppointmentClientAdd.xaml;Manager\Appointment\PageManagerAppointmentConfirming.xaml;Manager\Appointment\PageManagerAppointmentPetAdd.xaml;Manager\Clients\ManagerClientAddPage.xaml;Manager\Clients\ManagerClientMain.xaml;Manager\MedicalCard\ManagerMedicalCardAddPage.xaml;Manager\MedicalCard\ManagerMedicalCardMain.xaml;Manager\PageProfile.xaml;Manager\Pet\ManagerClientAddPage.xaml;Manager\Pet\ManagerPetMain.xaml;Manager\WindowManager.xaml;
 
-True
+False
 

@@ -11,31 +11,44 @@ namespace VetClinic
     {
         public static Auth.AuthWindow authWindow = new Auth.AuthWindow();
         public static Administrator.WindowAdmin windowAdmin = new Administrator.WindowAdmin();
-       // public static Administrator.Appointment.PageAdminAppointmentClientAdd addClientAppointment = new Administrator.Appointment.PageAdminAppointmentClientAdd();
+        public static Doctor.WindowDoctor windowDoctor = new Doctor.WindowDoctor();
+        public static Manager.WindowManager windowManager=new Manager.WindowManager();
+
+
+
 
         public static Database.AuthData saveAuthData = new Database.AuthData();
+        public static Database.VetDBEntities db = new Database.VetDBEntities();
         public static Database.Appointment appointment = new Database.Appointment();
         public static Database.Client clientAppointment = new Database.Client();
         public static Database.Pet petAppointment = new Database.Pet();
-        public static Database.AppointmentData appointmentData = new Database.AppointmentData();
-        public static Database.MedicalCard saveMedicalCard = new Database.MedicalCard();
-
-        public static Database.Appointment saveAppointment = new Database.Appointment();
-        public static Database.Client clientSaveAppointment = new Database.Client();
-        public static Database.Pet petSaveAppointment = new Database.Pet();
-
-
+        public static Database.Client newsaveClient = new Database.Client();
+        public static Database.Pet newsavePet = new Database.Pet();
         public static Database.Appointment mainSaverAppointment = new Database.Appointment();
-        public static Database.MedicalCard mainSaverMedicalCard = new Database.MedicalCard();
-
-        public static Database.AuthData authDataSave = new Database.AuthData();
-        public static Database.Appointment changeAppointmentData = new Database.Appointment();
-        public static Database.MedicalCard changeMedicalCard = new Database.MedicalCard();
-
         public static Database.MedicalCard MedicalCardsave = new Database.MedicalCard();
-
-
+        public static Database.Appointment changeAppointmentData = new Database.Appointment();
+        public static Database.MedicalCard saveMedicalCard = new Database.MedicalCard();
+        public static Database.AuthData authDataSave = new Database.AuthData();
+        public static Database.Appointment newsaveAppointment = new Database.Appointment();
+        public static Database.MedicalCard newMedicalCard = new Database.MedicalCard();
         public static Database.Client clientSave = new Database.Client();
+        public static Database.Pet newPet = new Database.Pet();
+        public static Database.Procedure newProcedure = new Database.Procedure();
+        public static Database.VetDBEntities Context { get; } = new Database.VetDBEntities();
+
+        //public static Database.AppointmentData appointmentData = new Database.AppointmentData();
+        //public static Database.Appointment saveAppointment = new Database.Appointment();
+        //public static Database.Client clientSaveAppointment = new Database.Client();
+        //public static Database.Pet petSaveAppointment = new Database.Pet();
+        //public static Database.MedicalCard mainSaverMedicalCard = new Database.MedicalCard();
+        //public static item newitem = new item();
+        //public static Database.MedicalCard changeMedicalCard = new Database.MedicalCard();
+
+
+
+
+
+
 
         public partial class item
         {
@@ -43,11 +56,6 @@ namespace VetClinic
             public static string NamePet { get; set; }
             public static string DateTime { get; set; }
         }
-
-        public static item newitem = new item();
-
-        public static Database.VetDBEntities Context { get; } = new Database.VetDBEntities ();
-        public static Database.VetDBEntities db = new Database.VetDBEntities();
 
         public static void CloseWindow()
         {
@@ -124,50 +132,6 @@ namespace VetClinic
             Class.db.SaveChanges();
 
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        public static Database.Appointment newsaveAppointment = new Database.Appointment();
-        public static Database.Client newsaveClient = new Database.Client();
-        public static Database.Pet newsavePet = new Database.Pet();
-        public static Database.MedicalCard newMedicalCard = new Database.MedicalCard();
-        public static Database.Pet newPet = new Database.Pet();
-        public static Database.Procedure newProcedure = new Database.Procedure();
-
 
     }
 }

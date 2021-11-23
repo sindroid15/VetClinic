@@ -11,6 +11,9 @@
       >
 
     <Grid>
+        <Viewbox Stretch="Uniform"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Center">
         <StackPanel Orientation="Vertical" 
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center">
@@ -43,5 +46,6 @@
                     Click="btnLogin_Click"
                     />
         </StackPanel>
+        </Viewbox>
     </Grid>
 </Page>

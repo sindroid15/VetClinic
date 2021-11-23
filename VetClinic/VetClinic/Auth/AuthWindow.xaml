@@ -12,8 +12,8 @@
         >
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="960"/>
-            <ColumnDefinition Width="960"/>
+            <ColumnDefinition Width="960*"/>
+            <ColumnDefinition Width="960*"/>
         </Grid.ColumnDefinitions>
         <Frame Grid.Column="0" 
                x:Name="frmAboutClinic"

@@ -39,11 +39,13 @@ namespace VetClinic.Auth
                     Application.Current.MainWindow.Hide();
                     break;
                 case 2:
-                    MessageBox.Show(Class.saveAuthData.Staff.IdRole.ToString(), "Not Relesed manager", MessageBoxButton.OK);
-                    break;
+                        Class.windowManager.Show();
+                        Application.Current.MainWindow.Hide();
+                        break;
                 case 3:
-                    MessageBox.Show(Class.saveAuthData.Staff.IdRole.ToString(), "Not Relesed doctor", MessageBoxButton.OK);
-                    break;
+                        Class.windowDoctor.Show();
+                        Application.Current.MainWindow.Hide();
+                        break;
                 default:
                     MessageBox.Show(Class.saveAuthData.Staff.IdRole.ToString(), "Not Relesed user", MessageBoxButton.OK);
                     break;

@@ -203,6 +203,66 @@
     <Compile Include="Database\TypePet.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Dcotor\Appointment\PageDoctorAppointment.xaml.cs">
+      <DependentUpon>PageDoctorAppointment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dcotor\Appointment\PageDoctorAppointmentClientAdd.xaml.cs">
+      <DependentUpon>PageDoctorAppointmentClientAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dcotor\Appointment\PageDoctorAppointmentConfirming.xaml.cs">
+      <DependentUpon>PageDoctorAppointmentConfirming.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dcotor\Appointment\PageDoctorAppointmentPetAdd.xaml.cs">
+      <DependentUpon>PageDoctorAppointmentPetAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dcotor\PageProfile.xaml.cs">
+      <DependentUpon>PageProfile.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dcotor\Procedure\DoctorProcedureAddPage.xaml.cs">
+      <DependentUpon>DoctorProcedureAddPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dcotor\Procedure\DoctorProcedureMain.xaml.cs">
+      <DependentUpon>DoctorProcedureMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dcotor\WindowDoctor.xaml.cs">
+      <DependentUpon>WindowDoctor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Appointment\PageManagerAppointment.xaml.cs">
+      <DependentUpon>PageManagerAppointment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Appointment\PageManagerAppointmentClientAdd.xaml.cs">
+      <DependentUpon>PageManagerAppointmentClientAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Appointment\PageManagerAppointmentConfirming.xaml.cs">
+      <DependentUpon>PageManagerAppointmentConfirming.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Appointment\PageManagerAppointmentPetAdd.xaml.cs">
+      <DependentUpon>PageManagerAppointmentPetAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Clients\ManagerClientAddPage.xaml.cs">
+      <DependentUpon>ManagerClientAddPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Clients\ManagerClientMain.xaml.cs">
+      <DependentUpon>ManagerClientMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\MedicalCard\ManagerMedicalCardAddPage.xaml.cs">
+      <DependentUpon>ManagerMedicalCardAddPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\MedicalCard\ManagerMedicalCardMain.xaml.cs">
+      <DependentUpon>ManagerMedicalCardMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\PageProfile.xaml.cs">
+      <DependentUpon>PageProfile.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Pet\ManagerClientAddPage.xaml.cs">
+      <DependentUpon>ManagerClientAddPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Pet\ManagerPetMain.xaml.cs">
+      <DependentUpon>ManagerPetMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\WindowManager.xaml.cs">
+      <DependentUpon>WindowManager.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -317,14 +377,88 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Dcotor\Appointment\PageDoctorAppointment.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Dcotor\Appointment\PageDoctorAppointmentClientAdd.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Dcotor\Appointment\PageDoctorAppointmentConfirming.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Dcotor\Appointment\PageDoctorAppointmentPetAdd.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Dcotor\PageProfile.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Dcotor\Procedure\DoctorProcedureAddPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Dcotor\Procedure\DoctorProcedureMain.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Dcotor\WindowDoctor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Manager\Appointment\PageManagerAppointment.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Manager\Appointment\PageManagerAppointmentClientAdd.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Manager\Appointment\PageManagerAppointmentConfirming.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Manager\Appointment\PageManagerAppointmentPetAdd.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Manager\Clients\ManagerClientAddPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Manager\Clients\ManagerClientMain.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Manager\MedicalCard\ManagerMedicalCardAddPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Manager\MedicalCard\ManagerMedicalCardMain.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Manager\PageProfile.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Manager\Pet\ManagerClientAddPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Manager\Pet\ManagerPetMain.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Manager\WindowManager.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Dcotor\Appointment\" />
-    <Folder Include="Manager\Appointment\" />
-    <Folder Include="Manager\Clients\" />
-    <Folder Include="Manager\MedicalCard\" />
-    <Folder Include="Manager\Pet\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Database\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
